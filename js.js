@@ -3,7 +3,7 @@ var count = 0;
 var imagemover;
 var start_button;
 var randomnum;
-var json = JSON.parse('{"colors":["violet","indigo","blue","green","yellow","orange","red"],"score":[1,2,3,1,2,3,1]}');
+var json = JSON.parse('{"colors":["violet","indigo","blue","green","yellow","orange","red"],"score":[1,2,3,1,2,3,1]}');//,"timer":[2000,1500,1000,2000,1500,1000,2000]}');
 var timeleft;
 
 function Init() {
@@ -12,6 +12,7 @@ function Init() {
 
     setTimer();
     createElement();
+    // imagemover = setInterval(createElement, json.timer[randomnum - 1]);
 }
 
 
@@ -24,6 +25,7 @@ function setTimer() {
 
             clearInterval(downloadTimer);
             clearInterval(imagemover);
+            //document.getElementById("").innerHTML="Score: "+count;
             alert("Your score is: " + count);
             count = 0;
             document.getElementById("scorecount").innerHTML = "0";
@@ -57,7 +59,8 @@ function jsonReading() { randomnum = Math.floor(Math.random() * 7 + 1); }
 
 function moveImage() {
     jsonReading();
- 
+  //  console.log(json.colors[randomnum-1]+"   "+json.score[randomnum-1]+"   "+json.timer[randomnum-1]+"  "+timeleft );
+
     div_Element.style.backgroundColor = json.colors[randomnum - 1];
     var randNum_V = Math.round(Math.random() * 500);
     var randNum_H = Math.round(Math.random() * 500);
@@ -83,3 +86,22 @@ function sizeChange(size) {
     a.style.width = size + "px";
     a.style.height = size + "px";
 }
+
+
+/*
+function jsonloading()
+{ 
+   url = "jsoning.json";
+   
+    request=new XMLHttpRequest(); 
+   
+   request.onreadystatechange  = function()   {
+    //if (request.readyState == 4  )
+     // {
+        var jsonObj = JSON.parse(request.responseText);
+		alert(jsonObj.balls[2]);
+		//}
+   request.open("GET", url, true);
+   request.send();
+}
+}*/

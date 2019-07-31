@@ -1,7 +1,7 @@
 body{background-color:black; color: white;}
 h1{text-align:center; }
-/* #sizebuttons{} */
-#buttons{ padding:20px 20px 20px 20px; background-color:ash; font-size:15px; border:2px solid yellow;
+#sizebuttons{float:left;}
+.buttons{ padding:20px 20px 20px 20px; background-color:ash; font-size:15px; border:2px solid yellow;
           font-weight:bold; margin:0px 40px 60px 20px;} 
 #dynamicblock{ position:relative;background-color:white; height:500px; width:500px; margin:0 auto; }
 #startbutton{position:absolute; bottom:5px; right:5px; padding:10px 10px 10px 10px; border:1px solid black;}
