@@ -1,0 +1,28 @@
+body{background-color:black; color: white;}
+h1{text-align:center; }
+/* #sizebuttons{} */
+#buttons{ padding:20px 20px 20px 20px; background-color:ash; font-size:15px; border:2px solid yellow;
+          font-weight:bold; margin:0px 40px 60px 20px;} 
+#dynamicblock{ position:relative;background-color:white; height:500px; width:500px; margin:0 auto; }
+#startbutton{position:absolute; bottom:5px; right:5px; padding:10px 10px 10px 10px; border:1px solid black;}
+#scoreandtime{float:right; font-size:24px; margin-right:90px; margin-top:0px;}
+#rectangle{position: absolute; }
+#rectangle:active{transform: translateY(4px);}
+ul{list-style-type: none;}
+ul li{padding:10px;   }
+#scoreteller{background-color:grey; border:2px solid yellow; }
+#scoreboard{float: left; font-size: 20px;}
+
+#scoreboard td, #scoreboard th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color:yellow;
+}
+#scoreboard th{background-color:#C0C0C0;     padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color:yellow;
+   }
+#scoreboard tr:hover {background-color: #aaa;}
+
+

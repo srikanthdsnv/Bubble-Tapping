@@ -1,0 +1,63 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="csss.css">
+</head>
+<body>
+	
+	<h1>Bubble Tapping</h1>
+	
+	
+	<div id="scoreandtime">
+		<p>SCORE: <span id="scorecount">0</span> <br><br>
+			TIME LEFT: 00:<span id="countdowntime">60</span> sec</p>
+		</div>
+		
+		<table id="scoreboard">
+			<tr>
+				<th>Color</th>
+				<th>Score</th>
+			</tr>
+			<tr>
+				<td>Violet</td>
+				<td>1</td>
+			</tr>
+			
+			<tr>
+				<td>Indigo</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>Blue</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>Green</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>Yellow</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>Orange</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>Red</td>
+				<td>1</td>
+			</tr>
+		</table>
+		<div id="dynamicblock">
+			<input type=button value="Start" id="startbutton" onclick="Init()" >
+		</div>
+		<div id="sizebuttons">
+			<button   class="buttons" onclick="sizeChange(500)">500*500</button><br>
+			<button   class="buttons" onclick="sizeChange(600)">600*600</button><br>
+			<button   class="buttons" onclick="sizeChange(700)">700*700</button><br>
+			<button   class="buttons" onclick="sizeChange(800)">800*800</button><br>
+		</div>
+		<br><br>
+	</body>
+	<script src="js.js"></script>
+	
+	</html>
