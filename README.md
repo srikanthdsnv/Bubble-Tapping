@@ -13,3 +13,4 @@
 **Samples**
 
 ![sample](https://user-images.githubusercontent.com/38306134/62233542-6a5f6f00-b3e6-11e9-9b4e-672660267367.png)
+![playing](https://user-images.githubusercontent.com/38306134/62233789-e8bc1100-b3e6-11e9-9cf8-4a3b5ff0a807.png)
